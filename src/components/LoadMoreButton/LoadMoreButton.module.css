@@ -1,4 +1,4 @@
-.button {
+.loadMoreButton {
   display: block;
 
   margin-left: auto;
@@ -17,7 +17,7 @@
   transition: box-shadow var(--animation-cubicBezier);
 }
 
-.button:hover,
-.button:focus {
+.loadMoreButton:hover,
+.loadMoreButton:focus {
   box-shadow: var(--shadow-small);
 }

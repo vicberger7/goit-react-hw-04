@@ -1,10 +1,10 @@
 import styles from "./ImageCard.module.css";
 
-export const ImageCard = ({ item: { alt, src } }) => {
+export const ImageCard = ({ item: { alt_description, urls, onClick } }) => {
   return (
-    <div className={styles.gridItem}>
-      <div className={styles.thumb}>
-        <img src={src.large} alt={alt} />
+    <div className={styles.cardItem}>
+      <div className={styles.thumb} onClick={onClick}>
+        <img src={urls.regular} alt={alt_description} />
       </div>
     </div>
   );

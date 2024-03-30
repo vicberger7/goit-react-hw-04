@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import style from "./SearchBar.module.css";
-import { toast } from "react-toastify";
 
 export const SearchBar = ({ onSearch }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -13,14 +12,6 @@ export const SearchBar = ({ onSearch }) => {
   const onHandleSubmit = (evt) => {
     evt.preventDefault();
     onSearch(searchValue);
-    setSearchValue("");
-    if (searchValue.trim() !== "") {
-      onSearch(searchValue.trim());
-    } else {
-      toast.error("Please enter a search term", {
-        position: "top-center",
-      });
-    }
     setSearchValue("");
   };
   return (

@@ -64,8 +64,10 @@ export default App;
 
 // const ImageCard = ({ imageUrl, alt, onClick }) => {
 //   return (
-//     <div className={styles.cardItem} onClick={onClick}>
-//       <img src={imageUrl} alt={alt} />
+//     <div className={styles.cardItem}>
+//       <div className={styles.thumb} onClick={onClick}>
+//         <img src={imageUrl} alt={alt} />
+//       </div>
 //     </div>
 //   );
 // };

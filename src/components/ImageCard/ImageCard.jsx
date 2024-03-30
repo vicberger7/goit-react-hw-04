@@ -1,6 +1,6 @@
 import styles from "./ImageCard.module.css";
 
-export const ImageCard = ({ item: { alt_description, urls, onClick } }) => {
+export const ImageCard = ({ item: { alt_description, urls }, onClick }) => {
   return (
     <div className={styles.cardItem}>
       <div className={styles.thumb} onClick={onClick}>

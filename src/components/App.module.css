@@ -4,18 +4,6 @@
   margin: 0 auto;
 }
 
-/* .thumb {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: var(--color-light);
-  border: 4px solid #fff;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
 .button {
   display: block;
 
@@ -96,11 +84,11 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
   padding: 0;
-  margin: 0;
 }
 
-.gallery li {
-  width: 100%;
+.thumb {
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .cardItem {
@@ -108,7 +96,6 @@
   margin: 5px;
   border: 1px solid black;
   box-sizing: border-box;
-
 }
 .cardItem img {
   width: 100%;
@@ -137,4 +124,4 @@
 .loadMore:hover,
 .loadMore:focus {
   box-shadow: var(--shadow-small);
-} */
+}
